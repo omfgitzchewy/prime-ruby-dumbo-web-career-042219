@@ -5,10 +5,10 @@ def prime?(number)
 
   range = [2..number]
   range.each do |ele|
-    if number % range == 0
-      return true
-    else
+    if number % range != 0
       return false
+    else
+      return true
     end
   end
 end
