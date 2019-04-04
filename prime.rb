@@ -3,7 +3,7 @@ def prime?(number)
     return false
   end
 
-  range = [2..number]
+  range = [2...number]
   range.each do |ele|
     if number % ele == 0
       return false
